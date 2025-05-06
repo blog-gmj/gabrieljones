@@ -1,6 +1,6 @@
 ---
 ## Main icon
-icon: "/assets/images/b.svg"
+icon: "/assets/images/logo.svg"
 
 ## Social Card [1200x630]
 social-card: https://gabrieljones.it/assets/images/favicons/social-card.png
@@ -23,16 +23,13 @@ author:
 ## Social
 social-links:
   en:
-    snapchat:
-      name: "snapchat"
+    SnapChat:
+      name: "SnapChat"
       url: "https://www.snapchat.com/add/gabriel_jones4"
     Instagram:
       name: "instagram"
       url: "http://instagram.com/onlygabbyme"
   it:
-    snapchat:
-      name: "snapchat"
-      url: "https://www.snapchat.com/add/gabriel_jones4"
     Instagram:
       name: "instagram"
       url: "http://instagram.com/onlygabbyme"
