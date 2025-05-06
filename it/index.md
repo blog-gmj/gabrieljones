@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Homepage di esempio
-description: Questo è un esempio di homepage con utilizzo del componente "hero"
+title: Benvenuto nel blog di Gabriel Matteo Jones
+description:
 lang: it
 ref: homepage
 permalink: /
