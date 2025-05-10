@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  {% include meta.html %}
+  {% include styles.html %}
+    <meta name="description" content="Scopri il profilo di Gabriel Jones, giovane politico, influencer e bibliotecario volontario. Fondatore di Arena Giovani, il progetto per unire i giovani e promuovere il cambiamento post-pandemia.">
+    <meta name="keywords" content="Gabriel Jones, Matteo, giovane politico, bibliotecario volontario, influencer, Arena Giovani, progetti per giovani, politica giovanile, cultura, video marketing, social media per giovani">
+    <meta name="author" content="Gabriel Jones">
+</head>
+<body>
+  {%- include header/header.html -%}
+
+<article class="container my-4">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Scritto il {{ page.date | date: "%d/%m/%Y" }}
+  </div>
+
+  {% include disqus.html %}
+</article>
+  {%- include footer/footer.html -%}
+  {%- include cookiebar.html -%}
+  {%- include scripts.html -%}
+</body>
+</html>

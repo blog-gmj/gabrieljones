@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: BIO
 title: "Gabriel Jones (Matteo): Giovane Politico, Influencer e Bibliotecario
   Volontario"
 categories:
