@@ -1,22 +1,20 @@
+
+
+
 backend:
   name: git-gateway
-  branch: dependabot/bundler/addressable-2.8.1
+  branch: main
 
-media_folder: "assets/"
+media_folder: "assets"
 public_folder: "/assets"
 
 collections:
   - name: "posts"
-    label: "Post"
+    label: "Articoli"
     folder: "_posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}-RGMJ"
+    slug: "{{year}}%%%{{month}}%%%{{day}}%%%{{slug}}RGMJ%%%"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titolo", name: "title", widget: "string"}
-      - {label: "Categorie", name: "categories", widget: "list", default: ["categoria2"]}
-      - {label: "Tag", name: "tags", widget: "list", default: ["tag1", "tag2"]}
-      - {label: "Lingua", name: "lang", widget: "string", default: "it"}
-      - {label: "Ref", name: "ref", widget: "string", default: "new"}
-      - {label: "Autore", name: "author", widget: "string", default: "RedazioneGabrielMatteoJones"}
+      - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Contenuto", name: "body", widget: "markdown"}
