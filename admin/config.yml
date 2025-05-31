@@ -10,7 +10,7 @@ collections:
     label: "Post"
     folder: "_posts" # La cartella dove sono i post in Jekyll
     create: true # Permette di creare nuovi post
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Struttura del nome dei file
+    slug: "{{year}}-{{day}}-{{month}}-{{slug}}" # Struttura del nome dei file
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
