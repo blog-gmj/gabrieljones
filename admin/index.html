@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Netlify CMS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/netlify-cms@2.0.0/dist/netlify-cms.css">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/netlify-cms@2.0.0/dist/netlify-cms.js"></script>
-  </body>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netlify CMS - Pannello di Amministrazione</title>
+  <link href="https://unpkg.com/netlify-cms@2.0.0/dist/netlify-cms.css" rel="stylesheet">
+</head>
+<body>
+  <div id="nc-root"></div>
+
+  <!-- Aggiungiamo lo script per il Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@2.0.0/dist/netlify-cms.js"></script>
+
+  <script>
+    // Configurazione Netlify CMS
+    window.CMS_MANUAL_INIT = true;
+
+    window.CMS.init();
+  </script>
+</body>
 </html>
