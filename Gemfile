@@ -12,3 +12,5 @@ gem 'jekyll-sitemap', '~> 1.0'
 
 # Bundler per gestire le dipendenze
 gem 'bundler', '~> 2.0'
+
+gem "jekyll-admin"

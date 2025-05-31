@@ -1,20 +1,18 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: dependabot/bundler/addressable-2.8.1 # La tua branch principale, solitamente 'main' o 'master'
 
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "assets" # Dove saranno caricate le immagini
+public_folder: "/assets" # Path pubblico per le immagini
 
 collections:
-  - name: "posts"
-    label: "Articoli"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}%%%{{month}}%%%{{day}}%%%{{slug}}RGMJ%%%"
+  - name: "posts" # Nome della collection, che corrisponde ai post
+    label: "Post"
+    folder: "_posts" # La cartella dove sono i post in Jekyll
+    create: true # Permette di creare nuovi post
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Struttura del nome dei file
     fields:
-      - {label: "Titolo", name: "title", widget: "string"}
-      - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Contenuto", name: "body", widget: "markdown"}
-      - {label: "categories", name: "categories", widget: "string"}
-      - {label: "tags", name: "tags", widget: "string"}
-      - {label: "author", name: "author", widget: "string"}
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
