@@ -1,23 +1,14 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Netlify CMS - Pannello di Amministrazione</title>
-  <link href="https://unpkg.com/netlify-cms@2.0.0/dist/netlify-cms.css" rel="stylesheet">
-</head>
-<body>
-  <div id="nc-root"></div>
-
-  <!-- Aggiungiamo lo script per il Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@2.0.0/dist/netlify-cms.js"></script>
-
-  <script>
-    // Configurazione Netlify CMS
-    window.CMS_MANUAL_INIT = true;
-
-    window.CMS.init();
-  </script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Include the identity widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
 </html>
