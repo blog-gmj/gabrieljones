@@ -13,6 +13,6 @@ collections:
     slug: "{{year}}-{{day}}-{{month}}-{{slug}}" # Struttura del nome dei file
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Data", name: "date", widget: "date" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
