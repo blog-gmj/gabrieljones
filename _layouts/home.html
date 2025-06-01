@@ -179,12 +179,13 @@
   
   
   
-  <div class="container">
+<div class="container">
   <div class="row">
+    <!-- Inizio colonna per i post -->
     <div class="col-12 col-lg-8">
       {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
       {% for post in sorted_posts limit:3 %}
-        <div class="card-wrapper card-space">
+        <div class="card-wrapper mb-4">
           <div class="card card-bg card-big border-bottom-card">
             <div class="flag-icon"></div>
             <div class="etichetta">
@@ -205,6 +206,8 @@
         </div>
       {% endfor %}
     </div>
+    <!-- Fine colonna per i post -->
+
     <!-- Inizio colonna per aside -->
     <div class="col-12 col-lg-4">
       <aside class="it-announcement">
@@ -219,6 +222,7 @@
     <!-- Fine colonna per aside -->
   </div>
 </div>
+
 
   
   
