@@ -1,14 +1,8 @@
 ---
 title: "🌟 Biblioteche: Non Solo Libri, Ma Spazi di Incontro e Innovazione 🌟"
-date: 2025-06-01T11:05:00.000Z
+date: 2025-05-30T11:05:00.000Z
 tags:
-  - biblioteche
   - bibliowin
-  - tecnologia
-  - GestioneLibraria
-  - InnovazioneCulturale
-  - BibliotecaDigitale
-  - Biblioteche
 categories:
   - cultura
 description: Scopri come Bibliowin sta rivoluzionando la gestione delle
