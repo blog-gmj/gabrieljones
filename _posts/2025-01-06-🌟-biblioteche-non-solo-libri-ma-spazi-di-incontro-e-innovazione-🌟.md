@@ -9,7 +9,6 @@ tags:
   - InnovazioneCulturale
   - BibliotecaDigitale
   - Biblioteche
-  - ""
 categories:
   - cultura
 description: Scopri come Bibliowin sta rivoluzionando la gestione delle
