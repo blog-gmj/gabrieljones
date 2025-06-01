@@ -1,6 +1,6 @@
 ---
 title: "🌟 Biblioteche: Non Solo Libri, Ma Spazi di Incontro e Innovazione 🌟"
-date: 2025-05-30T11:05:00.000Z
+date: 2025-06-01
 tags:
   - bibliowin
 categories:
