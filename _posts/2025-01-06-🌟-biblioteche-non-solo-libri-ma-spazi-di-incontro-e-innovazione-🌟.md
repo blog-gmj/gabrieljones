@@ -28,7 +28,6 @@ keywords: software per biblioteche  gestione
   gestione libri  prestito libri automatico  biblioteche italiane  innovazione
   nella gestione bibliotecaria
 image: https://www.sediadaufficio.it/blog/wp-content/uploads/2018/01/Ufficio-Industriale-1.jpg
-permalink: /
 ref: new
 author: Redazione GMJ
 lang: it
