@@ -13,6 +13,16 @@ collections:
     slug: "{{year}}-{{day}}-{{month}}-{{slug}}" # Struttura del nome dei file
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "date" }
+      - { label: "Data", name: "date", widget: "datetime", default: "now" } # Data automatica
       - { label: "Contenuto", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categorie", name: "categories", widget: "list" }
+      - { label: "Descrizione", name: "description", widget: "string" }
+      - { label: "Parole Chiave", name: "keywords", widget: "string" }
+      - { label: "Immagine", name: "image", widget: "image" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Riferimento", name: "ref", widget: "string", default: "new" } # Riferimento automatico
+      - { label: "Autore", name: "author", widget: "hidden", default: "Redazione GMJ" } # Autore nascosto
+
+      # Lingua nascosta con valore predefinito 'it'
+      - { label: "Lingua", name: "lang", widget: "hidden", default: "it" }
