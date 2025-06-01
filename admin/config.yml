@@ -13,7 +13,7 @@ collections:
     slug: "{{year}}-{{day}}-{{month}}-{{slug}}" # Struttura del nome dei file
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime", default: "now" } # Data automatica
+      - { label: "Data", name: "date", widget: "date", default: "now" } # Data automatica
       - { label: "Contenuto", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Categorie", name: "categories", widget: "list" }
