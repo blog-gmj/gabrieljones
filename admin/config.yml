@@ -23,6 +23,13 @@ collections:
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Riferimento", name: "ref", widget: "string", default: "new" } # Riferimento automatico
       - { label: "Autore", name: "author", widget: "hidden", default: "Redazione GMJ" } # Autore nascosto
-
-      # Lingua nascosta con valore predefinito 'it'
       - { label: "Lingua", name: "lang", widget: "hidden", default: "it" }
+  - name: "page" # Nome della collection, che corrisponde ai post
+    label: "Post"
+    folder: "it" # La cartella dove sono i post in Jekyll
+    create: true # Permette di creare nuovi post
+    slug: "{{title}}" # Struttura del nome dei file
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime", default: "now" } # Data automatica
+      - { label: "Contenuto", name: "body", widget: "markdown" }
