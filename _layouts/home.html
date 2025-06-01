@@ -169,55 +169,73 @@
    </div>
 </section>
 
-<div class="container">
-
-<div class="row">
-  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-  {% for post in sorted_posts limit:3 %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="container">
+  <div class="row">
     <div class="col-12 col-lg-8">
-      <!--start card-->
-      <div class="card-wrapper card-space">
-        <div class="card card-bg card-big border-bottom-card">
-          <div class="flag-icon"></div>
-          <div class="etichetta">
-            <span>Redattato da {{ post.author }}</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title h5">{{ post.title }}</h3>
-            <p class="card-text font-serif">{{ post.excerpt }}</p>
-            <a class="read-more" href="{{ post.url | relative_url }}">
-              <span class="text">Leggi di più</span>
-              <span class="visually-hidden">su {{ post.title }}</span>
-              <svg class="icon">
-                <use href="{{ site.baseurl }}/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
-              </svg>
-            </a>
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts limit:3 %}
+        <div class="card-wrapper card-space">
+          <div class="card card-bg card-big border-bottom-card">
+            <div class="flag-icon"></div>
+            <div class="etichetta">
+              <span>Redattato da {{ post.author }}</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title h5">{{ post.title }}</h3>
+              <p class="card-text font-serif">{{ post.excerpt }}</p>
+              <a class="read-more" href="{{ post.url | relative_url }}">
+                <span class="text">Leggi di più</span>
+                <span class="visually-hidden">su {{ post.title }}</span>
+                <svg class="icon">
+                  <use href="{{ site.baseurl }}/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <!--end card-->
+      {% endfor %}
     </div>
-  {% endfor %}
+    <!-- Inizio colonna per aside -->
+    <div class="col-12 col-lg-4">
+      <aside class="it-announcement">
+        <div class="it-announcement-header">
+          <h3>Annuncio Importante</h3>
+        </div>
+        <div class="it-announcement-body">
+          <p>Visita la nostra nuova sezione su <a href="/novità">novità e aggiornamenti</a> per tutte le ultime informazioni!</p>
+        </div>
+      </aside>
+    </div>
+    <!-- Fine colonna per aside -->
+  </div>
 </div>
 
-
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-
-  <aside class="it-announcement">
-    <div class="it-announcement-header">
-      <h3>Annuncio Importante</h3>
-    </div>
-    <div class="it-announcement-body">
-      <p>Visita la nostra nuova sezione su <a href="/novità">novità e aggiornamenti</a> per tutte le ultime informazioni!</p>
-    </div>
-  </aside>
-
-</div>
   
-<footer class="it-footer">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer class="it-footer">
   <div class="it-footer-main">
     <div class="container">
       <section>
