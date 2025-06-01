@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Benvenuto nel blog di Gabriel Matteo Jones
 description:
 lang: it
