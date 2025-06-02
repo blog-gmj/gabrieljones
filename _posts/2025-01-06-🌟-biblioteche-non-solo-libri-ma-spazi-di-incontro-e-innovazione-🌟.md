@@ -24,6 +24,7 @@ image: https://www.sediadaufficio.it/blog/wp-content/uploads/2018/01/Ufficio-Ind
 ref: new
 author: Redazione GMJ
 lang: it
+categories: [0u]
 ---
 🌟 **Biblioteche: Non Solo Libri, Ma Spazi di Incontro e Innovazione** 🌟
 
