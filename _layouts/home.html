@@ -1,35 +1,84 @@
 ---
 layout: default
 ---
-<!-- File component.html -->
-<div class="container">
-  <div class="row">
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in sorted_posts limit:6 %}
-      <div class="col-12 col-lg-6 mb-4">
-        <!--start card-->
-        <div class="card-wrapper card-space it-shadow">
-          <div class="card shadow-sm"> <!-- Aggiunta classe shadow-sm per l'ombra -->
-            <div class="card-body">
-              <div class="category-top">
-                <a class="category" href="{{ post.category | relative_url }}">{{ post.category }}</a>
-                <span class="data">{{ post.date | date: "%d/%m/%Y" }}</span>
-              </div>
-              <h3 class="card-title big-heading h5">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              <p class="card-text font-serif">{{ post.excerpt }}</p>
-              <span class="card-signature">di {{ post.author }}</span>
-              <a class="read-more" href="{{ post.url | relative_url }}">
-                <span class="text">Leggi di più</span>
-                <span class="visually-hidden">su {{ post.title }}</span>
-                <svg class="icon"><use href="{{ site.baseurl }}/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-              </a>
-            </div>
-          </div>
+
+  <main class="main">
+    <div class="wrap grid-hero">
+      {% assign hero = site.posts.first %}
+      <article class="card">
+        <img src="{{ hero.image | default: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop' }}" alt="hero">
+        <div class="pad">
+          <div class="kicker">{{ hero.category }}</div>
+          <h1 class="title">{{ hero.title }}</h1>
+          <p class="meta">di {{ hero.author | default: "Redazione" }} • {{ hero.date | date: "%d %b %Y" }}</p>
         </div>
-        <!--end card-->
+      </article>
+
+      <aside>
+        <div class="list">
+          {% for post in site.posts offset:1 limit:3 %}
+          <a href="{{ post.url }}">
+            <img src="{{ post.image | default: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop' }}" alt="">
+            <div>
+              <div class="title">{{ post.title }}</div>
+              <div class="meta">{{ post.date | date: "%d %b %Y" }}</div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </aside>
+    </div>
+
+    <section class="wrap section">
+      <h2>Tutti i post</h2>
+      <div class="posts">
+        {% for post in site.posts offset:4 limit:6 %}
+        <article class="post">
+          <img src="{{ post.image | default: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop' }}" alt="">
+          <div class="pad">
+            <h3 class="title">{{ post.title }}</h3>
+            <div class="meta">{{ post.date | date: "%d %b %Y" }}</div>
+          </div>
+        </article>
+        {% endfor %}
       </div>
-    {% endfor %}
-  </div>
-</div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Categorie</h2>
+      <div class="categories">
+        {% for category in site.categories %}
+        <div class="cat"><div>📂</div><span>{{ category[0] }}</span></div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Circolari</h2>
+      <div class="posts">
+        {% for circ in site.circolari limit:3 %}
+        <article class="post">
+          <div class="pad">
+            <h3 class="title">{{ circ.title }}</h3>
+            <div class="meta">Pubblicata {{ circ.date | date: "%d %b %Y" }}</div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Approfondimenti</h2>
+      <div class="posts">
+        {% for post in site.posts limit:3 %}
+        <article class="post">
+          <img src="{{ post.image | default: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop' }}" alt="">
+          <div class="pad">
+            <h3 class="title">{{ post.title }}</h3>
+            <div class="meta">{{ post.date | date: "%d %b %Y" }}</div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
