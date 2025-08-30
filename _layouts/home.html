@@ -30,7 +30,7 @@ layout: default
   <section class="wrap section">
     <h2>Tutti i post</h2>
     <div class="posts grid">
-      {% for post in site.posts offset:4 limit:12 %}
+      {% for post in site.posts %}
       <article class="post">
         <img src="{{ post.image | default: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop' }}" alt="">
         <div class="pad">
@@ -83,7 +83,7 @@ layout: default
 
 <style>
   .wrap { 
-    max-width: 1200px; /* più largo del solito */
+    max-width: 1200px;
     margin: 0 auto; 
     padding: 2rem;
   }
@@ -104,7 +104,7 @@ layout: default
   .side-list .list .item {
     display: block;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
   }
 
   .posts.grid {
@@ -129,8 +129,9 @@ layout: default
   .cat {
     display: flex;
     align-items: center;
-    background: #f5f5f5;
+    border: 1px solid #ddd;
     padding: 0.5rem 1rem;
     border-radius: 30px;
+    background: white;
   }
 </style>
